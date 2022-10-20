@@ -3,4 +3,6 @@ steps:
     command: mvn clean install
     artifact_paths:
       - "target/*.jar"
-      
+notify:
+  - email: "asthagangwar3@gmail.com"
+    if: build.state == "passed"
