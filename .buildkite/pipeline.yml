@@ -2,5 +2,5 @@ steps:
   - label: "Maven Build using pipeline.yml"
     command: mvn clean install
     artifact_paths:
-      - "target/*.jar/*"
+      - "target/*.jar"
       
