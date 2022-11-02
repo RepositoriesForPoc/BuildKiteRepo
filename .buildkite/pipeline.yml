@@ -1,6 +1,8 @@
 steps:
   - label: "Maven Build using pipeline.yml"
     command: mvn clean install
+    agents:
+      queue: "windows"
     artifact_paths:
       - "target/*.jar"
 notify:
